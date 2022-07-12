@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Youtify Home Page</title>
+    <script src="https://kit.fontawesome.com/c471e3698b.js" crossorigin="anonymous"></script>
+<style>
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+body{
+
+    background-color: rgb(74, 74, 87);
+
+}
+
+
+
+
+.wrapper .sidebar{
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar ul.mainmenu li a{
+    display: block;
+    padding: 10px 30px;
+    color: rgb(241, 237, 237);
+    font-size: 13px;
+    position: relative;
+}
+
+
+
+
+.wrapper .sidebar ul.mainmenu li a :hover{
+    font-weight: bold;
+}
+
+.wrapper .sidebar ul.mainmenu li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul.playlist li a{
+    display: block;
+    padding: 8px 10px;
+    color: rgb(241, 237, 237);
+    font-size: 13px;
+    position: relative;
+}
+.wrapper .sidebar ul.playlist li a :hover{
+    font-weight: bold;
+}
+.wrapper .sidebar ul.playlist li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.vertical-menu {
+  width: 220px;
+  height: 450px;
+  
+  overflow-y: auto;
+}
+
+.vertical-menu a {
+  background-color: rgb(0, 0, 0);
+  color: black;
+  
+  padding: 20px;
+  text-decoration: none;
+}
+
+.vertical-menu a.active {
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+}
+
+.mainbody {
+    padding-left: 250px;
+    padding-top: 70px;
+    padding-right: 15px;
+}
+.playlisttable tr{
+    padding-bottom: 10px;
+}
+table {
+   border-collapse: seperate;
+   border-spacing: 0 15px;
+}
+.playlisttable .songname{
+    padding-left: 32px;
+    padding-right: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(75, 95, 73);
+}
+.playlisttable td img{
+    height: 80px;
+}
+.playlisttable .songicon{
+    padding-left: 15px;
+}
+
+.playlisttable tr td:hover{
+    background-color: rgb(66, 87, 64); 
+}
+
+.mainbody .episodes span{
+    display: inline-block;
+}
+.mainbody{
+    padding-right: 20px;
+}
+.mainbody .episodes span h5 a:hover{
+    text-decoration: underline;
+}
+.mainbody .epinames tr td .epicon img{
+    height:160px;
+}
+.mainbody .epinames{
+    border-collapse: separate;
+  border-spacing: 25px 0px;
+}
+.mainbody .epinames tr :hover{
+    background-color: rgba(110, 7, 7, 0.603);
+}
+.mainbody .epinames tr td .epiname {
+    padding-left: 10px;
+}
+</style>
+
+</head>
+<body>
+    
+
+
+    <div class="topmenu">
+
+
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+
+            <ul class = mainmenu>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="item" >Home </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="item"> Search   </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item"> Your Library </span>
+                    </a>
+                </li>
+
+                <br>
+                <br>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item"> Create Playlist </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item"> Liked Songs </span>
+                    </a>
+                </li>
+
+            </ul>
+          <br>
+          
+          <hr color="gray"> 
+          <br>
+        
+        <ul class="playlist">
+        <div class="vertical-menu">     
+            <li>
+                <a href="#" class="active">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item" >FAMPL </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-desktop"></i></span>
+                    <span class="item"> I Don't give a fuck </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span class="item"> bad bitches don't cry </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item"> Classic </span>
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span class="item"> Not a love song  </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item"> Sorry not Sorry </span>
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span class="item"> Love you 3000 </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item"> Dear future boyfriend </span>
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item">Lets Overthink</span>
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item"> Over a cup of coffee </span>
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item">bulow</span>
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item"> Boys will be boys </span>
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item"> Hate that I love you</span>
+                </a>
+            </li> 
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item">Lost in crowded room</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span class="item">ME YOU AND THE MOON</span>
+                </a>
+            </li> 
+        </div>
+        </ul>
+        </div>
+        </div>
+
+    <div class="mainbody">
+        <h1>Good Evening </h1>
+        <br>
+        <table class="playlisttable">
+            <tr>
+                <td class="songicon">
+                    <img src="C:\Users\SAKSHI SHARMA\Desktop\spotify\download (5).jpg" alt="">
+                </td>
+                <td class="songname">
+                <a href="https://youtu.be/WgTMeICssXY" >
+                    <h3>2010s</h3>
+                </a>
+                </td>
+                <td class="songicon">        
+                    <img src="C:\Users\SAKSHI SHARMA\Desktop\spotify\groupie.jpg" alt="">
+                </td>
+                <td class="songname">
+                <a href="https://youtu.be/7KPyunRIjr0">
+                    <h3>bad bitches don't cry</h3>
+                </a>
+                </td>
+                <td class="songicon">
+                    <img src="C:\Users\SAKSHI SHARMA\Desktop\spotify\download (3).jpg" alt="">
+                </td>
+                <td class="songname">
+                <a href="https://youtu.be/nNLHnrwqhic">
+                    <h3>Let's just Overthink</h3>
+                </a>
+                </td>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="songicon">
+                    <img src="C:\Users\SAKSHI SHARMA\Desktop\spotify\download (4).jpg" alt="">
+                </td>
+                <td class="songname">
+                <a href="https://youtu.be/59ZwdNy_d5w">
+                    <h3>
+                        Scars to your beautiful
+                    </h3>
+                </a>
+                </td>
+                <td class="songicon">
+                    <img src="C:\Users\SAKSHI SHARMA\Desktop\spotify\download.jpg" alt="">
+                </td>
+                <td class="songname">
+                <a href="https://youtu.be/7m4_gcNwbaE">
+                    <h3>Liked Songs</h3>
+                </a>
+                </td>
+                <td class="songicon">
+                    <img src="C:\Users\SAKSHI SHARMA\Desktop\spotify\download (1).jpg" alt="">
+                </td>
+                <td class="songname">
+                <a href="https://youtu.be/6bCEKmfoMd8">
+                    <h3>EDM Hits</h3>
+                </a>
+                </td>
+            </tr>
+            </table>
+            <br>
+
+            <div class="episodes">
+                <span>
+                   <h2>
+                       Episodes for you
+                   </h2>
+                </span>
+                <span style ="float:right">
+                   <h5>
+                       <a href="#">SEE ALL</a>
+                   </h5>
+                </span>
+           </div>
+           <table class="epinames">
+               <tr>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl2 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>
+                               Love is in the air
+                           </p7>
+                       </span>
+                   </td>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl3 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>
+                               Aesthitic
+                           </p7>
+                       </span>
+                   </td>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl4 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>ZZZZZZ</p7>
+                       </span>
+                   </td>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl5 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>
+                                Hating this year
+                           </p7>
+                       </span>
+                   </td>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl6 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>
+                               Euphoria
+                           </p7>
+                       </span>
+                   </td>
+               </tr>
+           </table>
+           <br>
+
+            <div class="episodes">
+                <span>
+                   <h2>
+                       Get what you like
+                   </h2>
+                </span>
+                <span style ="float:right">
+                   <h5>
+                       <a href="#">SEE ALL</a>
+                   </h5>
+                </span>
+           </div>
+           <table class="epinames">
+               <tr>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl2 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>
+                               Love is in the air
+                           </p7>
+                       </span>
+                   </td>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl3 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>
+                               Aesthitic
+                           </p7>
+                       </span>
+                   </td>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl4 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>ZZZZZZ</p7>
+                       </span>
+                   </td>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl5 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>
+                                Hating this year
+                           </p7>
+                       </span>
+                   </td>
+                   <td>
+                       <span class="epicon">
+                           <img src="pl6 (1).jpg">
+                       </span>
+                       <span class="epiname">
+                           <p7>
+                               Euphoria
+                           </p7>
+                       </span>
+                   </td>
+               </tr>
+           </table>
+           </div>
+            
+    
+    
+</body>
+</html
